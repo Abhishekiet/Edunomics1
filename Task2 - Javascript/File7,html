@@ -1,0 +1,24 @@
+/*
+Ans 14.The charAt() method returns the character at the specified index in a string.
+The index of the first character is 0, the second character is 1, and so on.*/
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the first letter of "EDUNOMICS".</p>
+
+<button onclick="myFunction()">Click ME</button>
+
+<p id="abh"></p>
+
+<script>
+function myFunction() {
+  var str = "EDUNOMICS";
+  var word = str.charAt(0)
+  document.getElementById("abh").innerHTML = word;
+}
+</script>
+
+</body>
+</html>
