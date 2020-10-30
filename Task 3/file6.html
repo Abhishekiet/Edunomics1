@@ -1,0 +1,29 @@
+<html> 
+  
+<head> 
+   
+</head> 
+  
+<body> 
+    <h1>  Program to check leap year</h1> 
+    Please Enter A Year : <input type="text" id = "field"/> 
+      
+    <input type="button" id="button" onClick="chk()"
+            value="Submit"> 
+      
+    <p id="edu"></p> 
+      
+    <!-- JavaScript code to check given year is 
+        leap year or not -->
+    <script> 
+        function chk() { 
+            var year= document.getElementById("field").value; 
+              
+            document.getElementById("edu").innerHTML  
+                = (year % 100 === 0) ? (year % 400 === 0) 
+                                     : (year % 4 === 0); 
+        } 
+    </script> 
+</body> 
+  
+</html>  

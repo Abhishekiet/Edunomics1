@@ -1,0 +1,21 @@
+<html>
+<body>
+    <h1>Javascript Training Module </h1>
+
+<p id="edu"> JAVASCRIPTTRAININGMODULE </p>
+<script>
+var initial = "JAVASCRIPTTRAININGMODULE" ;
+function fun(){
+    final = initial
+var temp = initial.substr(0,final.length -1 );
+var rem = initial[final.length-1]
+var final = rem + temp
+initial = final
+document.getElementById("edu").innerHTML = final;
+}
+
+</script>
+<h1>Press Button To rotate the String  </h1>
+ <button onclick="fun()"> Rotate </button>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+<body>
+
+<p id="edu"></p>
+
+<script>
+var today = new Date();
+var hours = today.getHours();
+var minutes =today.getMinutes();
+var day =today.getDay();
+var daylist = ["sun","mon","tue","wed","thu","fri","sat"]
+document.getElementById("edu").innerHTML =
+"Today is :" + daylist[day] + " "+
+"Current time is :"+ hours + ":" +minutes  ;
+</script>
+
+</body>
+</html>

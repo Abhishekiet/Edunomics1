@@ -1,0 +1,31 @@
+<html> 
+  
+<head> 
+   
+</head> 
+  
+<body> 
+    <h1>  Guess A number </h1> 
+    Please Enter A Year : <input type="text" id = "field"/> 
+      
+    <input type="button" id="button" onClick="chk()"
+            value="Submit"> 
+      
+    <p id="edu"></p> 
+      
+    <!-- JavaScript code to check given year is 
+        leap year or not -->
+    <script> 
+        function chk() { 
+            var guess= document.getElementById("field").value; 
+            var a =9;
+            if (guess == a){ printed="Good Work!!"}
+            else{printed = "Not matched"}
+            
+            document.getElementById("edu").innerHTML  
+                = printed
+        } 
+    </script> 
+</body> 
+  
+</html>  
